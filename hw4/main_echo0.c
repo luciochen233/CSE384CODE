@@ -1,5 +1,5 @@
 /*
-main_cat.c HW4 CSE384
+main_echo0.c HW4 CSE384
 @author Guoliang Chen
 This file contains the main function for 
 make echo0
