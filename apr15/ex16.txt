@@ -1,0 +1,19 @@
+crtl + c will force quit the top process; whereas crtl + z will hide the top process to background.
+
+vim f1 &
+vim f2 &
+jobs       //this can show all the children process
+//then find the child process belong to vim f2
+/// in my case, it was 2
+
+fg 2
+//now the vim window is at the foreground
+
+//in order to find all the process that is running as root
+ps aux | grep root
+//after open firefox, to find it's PID:
+ps aux | grep firefox
+//to kill firefox, you have to locate it's PID, in my case, it was 3314 
+kill -15 3314
+
+
