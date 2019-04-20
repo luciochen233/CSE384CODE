@@ -13,7 +13,7 @@ fg 2
 ps aux | grep root
 //after open firefox, to find it's PID:
 ps aux | grep firefox
-//to kill firefox, you have to locate it's PID, in my case, it was 3314 
+//to kill firefox, you have to locate it's PID, in my case, it was 3314
 kill -15 3314
 
 
