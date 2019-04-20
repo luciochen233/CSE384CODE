@@ -7,7 +7,8 @@ This file contains all the method that we need in main
 int my_strlen(char *str) // to get the length of str
 {
     int count = 0;
-    for (char *p1 = str; *p1 != '\0'; p1 += 1) //plus one until reach \0
+    char *p1;
+    for (p1 = str; *p1 != '\0'; p1 += 1) //plus one until reach \0
     {
         count++;
     }
