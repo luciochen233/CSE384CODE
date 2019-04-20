@@ -1,0 +1,4 @@
+scp -P 27529 root@104.245.45.113:/var/www/lucio.tar.gz ~/lucio.tar.gz
+stty -ixon // disable ctrl+s freeze
+git clean -n // show untracked files
+git clean -f // clean untracked file // -X (remove ignored files) -x (remove all)
