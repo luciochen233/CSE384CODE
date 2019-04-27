@@ -1,3 +1,5 @@
+make: server client
+
 server:
 	gcc nopserver.c socket_helper.c -o server.out
 

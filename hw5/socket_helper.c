@@ -1,4 +1,5 @@
 #include "socket_helper.h"
+#include <stdlib.h>
 int open_listenfd(int port){
     int listenfd, optval=1;
     struct sockaddr_in serveraddr;
