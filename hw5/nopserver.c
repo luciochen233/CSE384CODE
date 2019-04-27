@@ -7,13 +7,16 @@ int main(int argc, char **argv)
     socklen_t clientlen;
     struct sockaddr_in clientaddr;
     struct hostent *hp; char *haddrp;
+
     if (argc != 2) 
     {
         fprintf(stderr, "usage: %s <port>\n", argv[0]);
         exit(0);
     }
+
     port = atoi(argv[1]);
     listenfd = open_listenfd(port);
+
     while (1) 
     {
         clientlen = sizeof(clientaddr);
@@ -21,5 +24,6 @@ int main(int argc, char **argv)
         printf("Socket connected: %d\n", connfd);
         //TODO Your homework code goes below
     } 
+    
     exit(0);
 }
