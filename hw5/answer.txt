@@ -1,0 +1,33 @@
+/*CSE384 HW5
+@author Guoliang Chen
+date: Wed May  1 23:40:30 EDT 2019
+*/
+
+Q1: C
+
+Q2: B
+
+Q3:
+kill -15 [pid] //use this at terminal
+//15  is SIGTERM or use kill -TERM [pid]. replace pid with the pid for the process you want to kill
+Ctrl-c // this can send SIGINT to the process, normally it will terminate
+Ctrl-\ // this will send SIGQUIT to the process, normally it will quit
+Ctrl-z // this will send SIGTSTP to the process, normally it will put the process into sleep mode
+send signal in c program by calling
+int kill(pid_t pid, int sig)
+this can send signal sig to process pid.
+
+Q4:D
+
+Q5:see q5.c
+
+Q6: the output is 
+1
+2
+3
+
+//a screenshot of the output is in this folder named q6.jpg
+
+Q7:see Q7.c
+
+Q8:see folder Q8
